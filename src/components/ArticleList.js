@@ -1,6 +1,6 @@
-import { Article } from "./article";
+import  Article from "./article";
 
-export function ArticleList({ posts }) {
+function ArticleList({ posts }) {
     return (
       <main>
         <div id="article-list">
@@ -16,3 +16,5 @@ export function ArticleList({ posts }) {
       </main>
     );
 }
+
+export default ArticleList
