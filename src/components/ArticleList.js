@@ -1,9 +1,8 @@
-import  Article from "./article";
+import  Article from "./Article";
 
 function ArticleList({ posts }) {
     return (
-      <main>
-        <div id="article-list">
+      <main id="article-list">
           {posts.map((post) => (
             <Article
               key={post.id}
@@ -12,7 +11,6 @@ function ArticleList({ posts }) {
               preview={post.preview}
             />
           ))}
-        </div>
       </main>
     );
 }
